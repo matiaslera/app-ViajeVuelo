@@ -14,4 +14,5 @@ export class AppComponent {
   loggedId(){
     return this.userLogService.getUserLoggedId()
   }
+  
 }
