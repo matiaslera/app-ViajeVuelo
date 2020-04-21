@@ -5,7 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 /** Registramos el locale ES para formatear números */
 import { registerLocaleData } from '@angular/common'
 import localeEs from '@angular/common/locales/es'
-
+/** Material modulos */
+import {MaterialModule} from'./material.module'
 registerLocaleData(localeEs)
 /** Fin registración ES */
 
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
     CommonModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

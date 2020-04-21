@@ -6,6 +6,12 @@ import { Conversor } from 'src/domain/conversor';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Conversor';
-  conversor = new Conversor();
+  constructor(private userLogService: LoginService){}
+  title = 'APP-Vuelo'
+  isLogged(){
+    return this.userLogService.isAuthenticated()
+  }
+  loggedId(){
+    return this.userLogService.getUserLoggedId()
+  }
 }
