@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Conversor } from 'src/domain/conversor';
+import { LoginService } from 'src/app/services/loginServices/login.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

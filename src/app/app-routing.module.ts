@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import {  LoginComponent} from 'src/app/login/login.component'
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -11,7 +11,7 @@ const routes: Routes = [
       //{ path: '', redirectTo: 'misequipos', pathMatch: 'full' },
     //]},
  // { path: 'perfil/:id', canActivate: [AuthGuard], component: ProfileComponent},
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '**', redirectTo: 'home', pathMatch: 'full' },
 
 ];
 

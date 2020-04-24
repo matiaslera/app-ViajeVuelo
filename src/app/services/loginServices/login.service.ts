@@ -11,8 +11,7 @@ import { isUndefined } from 'util';
 export class LoginService {
  private userLogged: Individuo = new Individuo
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {  }
   async authenticate(credentials: Individuo) {
     this.userLogged = await this.http.post<Individuo>(REST_SERVER_URL + '/login', credentials).toPromise()
   }
